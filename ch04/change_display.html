@@ -1,0 +1,19 @@
+<html>
+	<head>
+		<title>表示・非表示を行うプログラム</title>
+	</head>
+	<body>
+		<h1>表示・非表示を行うプログラム</h1>
+		<img src="../img/cat.jpg" id="cat">
+		<button id="btn">非表示</button>
+		<script type="text/javascript">
+			
+			//ボタンを押したら
+			document.getElementById('btn').onclick = function(){
+				var element = document.getElementById('cat');
+				element.style.display = "none";
+			}
+			
+		</script>
+	</body>
+<html>

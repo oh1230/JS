@@ -1,0 +1,29 @@
+<html>
+	<head>
+		<title>break文でwhile文の終了を制御するプログラム</title>
+	</head>
+	<body>
+		<h1>break文でwhile文の終了を制御するプログラム</h1>
+		<script type="text/javascript">
+		
+			
+			//カウント変数
+			var count = 1;
+			var num = 1;
+			
+			//ループ処理の開始
+			while (true) {
+				num = count * 5;
+				document.write("countが" + count + "のとき、変数numは" + num + "<br>");
+				//カウントを1増やす
+				count++;
+				
+				if(num >= 100) {
+					document.write("numが100を超えたので終了します");
+					break;
+				}
+			}
+
+		</script>
+	</body>
+</html>

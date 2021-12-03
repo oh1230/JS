@@ -1,0 +1,36 @@
+<html>
+      <head>
+            <title>その他のスタイルを指定を行うプログラム</title>
+      </head>
+      <body>
+            <h1>その他のスタイルを指定を行うプログラム</h1>
+            <p id="hoge">Sample</p>
+            <button id="btn">スタイルを変更</button>
+            <script type="text/javascript">
+ 
+                  // ボタンを押したら
+                  document.getElementById('btn').onclick = function() {
+                        var element = document.getElementById('hoge');
+
+                        // styleプロパティのcolorプロパティに「rgb(255, 255, 255)」を代入
+                        element.style.color= "rgb(255, 255, 255)";
+ 
+                        // styleプロパティのfontSizeプロパティに「60px」を代入
+                        element.style.fontSize= "60px";
+                        
+                        // styleプロパティのborderプロパティに「3px solid orange」を代入
+                        element.style.border = "3px solid orange";
+                        
+                        // styleプロパティのfontStyleプロパティに「italic」を代入
+                        element.style.fontStyle= "italic";
+                        
+                        // styleプロパティのpaddingプロパティに「20px」を代入
+                        element.style.padding= "20px";
+                        
+                        // styleプロパティのbackground-colorプロパティに「#cccccc」を代入
+                        element.style.backgroundColor = "#cccccc";
+                  }
+   
+　         </script>
+      </body>
+</html>

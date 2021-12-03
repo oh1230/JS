@@ -1,0 +1,29 @@
+<html>
+	<head>
+		<title>算術演算子の優先順位を確認するプログラム</title>
+	</head>
+	<body>
+		<h1>算術演算子の優先順位を確認するプログラム</h1>
+		<script type="text/javascript">
+		
+			var i = 3;
+			var j = 1;
+			
+			//文字列連結を使用せずに表示
+			document.write("1行の文字を");
+			document.write(i);
+			document.write("行のプログラムで表示しています。");
+			document.write("<br>");
+			
+			//文字列連結を使用して表示
+			document.write("実は、" + j + "行のプログラムで表示することも可能です。");
+			document.write("<br>");
+			
+			//四則演算の優先順位ルールによる文字列連結と計算の順序を確認
+			document.write("i + j = " + i + j);
+			document.write("<br>");
+			document.write("i + j = " + (i + j));
+			
+		</script>
+	</body>
+</html>

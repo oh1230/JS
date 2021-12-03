@@ -1,0 +1,19 @@
+<html>
+	<head>
+		<title>テキストの書き換えを行うプログラム</title>
+	</head>
+	<body>
+		<h1>テキストの書き換えを行うプログラム</h1>
+		<p id="hoge">テキストの書き換え</p>
+		<button id="btn">テキスト変更</button>
+		<script type="text/javascript">
+			
+			//ボタンを押したら
+			document.getElementById('btn').onclick = function() {
+				var element = document.getElementById('hoge');
+				element.innerHTML = "テキストを書き換えました";
+			}
+			
+		</script>
+	</body>
+</html>

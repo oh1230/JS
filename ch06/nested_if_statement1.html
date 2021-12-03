@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<title>ネストしたif文内の条件が全て成立するプログラム</title>
+	</head>
+	<body>
+		<h1>ネストしたif文内の条件が全て成立するプログラム</h1>
+		<script type="text/javascript">
+
+			//比較用の数値を管理するための変数aを宣言し、7で初期化
+			var a = 7;
+			
+			document.write("**** if文の判定開始 ****<br>");
+			
+			if (a >= 0) {
+				document.write("変数aは0以上。<br>");
+				if (a <= 10) {
+					document.write("変数aは10以下。<br>");
+				} else {
+					document.write("変数aは10より大きい。<br>");
+				}
+			}
+			
+			document.write("**** if文の判定終了 ****");
+
+		</script>
+	</body>
+</html>

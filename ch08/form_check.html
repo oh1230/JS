@@ -1,0 +1,38 @@
+<html>
+	<head>
+		<title>フォームの値を取得してエラーチェックを行うプログラム</title>
+	</head>
+	<body>
+		<h1>フォームの値を取得してエラーチェックを行うプログラム</h1>
+		<form name="enquete">
+			<p>名前：<input type="text" name="name"></p>
+			<p>
+				男性：<input type="radio" name="sex" value="男性">
+				女性：<input type="radio" name="sex" value="女性">
+			</p>
+			<p><input type="button" name="confirm" value="確認"></p>
+		</form>
+		<script type="text/javascript">
+		
+			//フォーム名がenqueteでnameがconfirmの要素を取得し変数btnに代入
+			var btn = document.enquete.confirm;
+
+			//clickイベントに対して、イベント発生時に行いたい処理を指定
+			btn.onclick = function() {
+				//テキストボックスの値を所得し変数nameに代入
+				var name = document.enquete.name.value;
+				//ラジオボタンの値を取得し変数sexに代入
+				var sex = document.enquete.sex.value;
+				
+				if(name ==''){
+					alert("名前を入力してください！");
+				}else if(sex ==''){
+					alert("性別を選択してください");
+				}else{
+					alert("名前は"+name+"さんです。性別は"+sex+"です。");
+				}
+			};
+			
+		</script>
+	</body>
+</html>

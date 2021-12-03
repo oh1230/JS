@@ -1,0 +1,19 @@
+<html>
+	<head>
+		<title>画像の書き換えを行うプログラム</title>
+	</head>
+	<body>
+		<h1>画像の書き換えを行うプログラム</h1>
+		<img src="../img/cat.jpg" id="cat">
+		<button id="btn">画像を変更</button>
+		<script type="text/javascript">
+			
+			//ボタンを押したら
+			document.getElementById('btn').onclick = function() {
+				var element = document.getElementById('cat');
+				element.src = "../img/dog.jpg";
+			}
+			
+		</script>
+	</body>
+</html>

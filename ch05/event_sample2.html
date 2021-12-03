@@ -1,0 +1,20 @@
+<html>
+	<head>
+		<title>DOM要素のイベントハンドラに処理を指定するプログラム</title>
+	</head>
+	<body>
+		<h1>DOM要素のイベントハンドラに処理を指定するプログラム</h1>
+		<button id="btn">イベントの動作確認</button>
+		<script type="text/javascript">
+		
+			//id属性にbtnといいidを持つ要素を取得し、変数elementに代入
+			var element = document.getElementById('btn');
+		
+			//onclickプロパティに、イベントを発生に行いたい処理を設定
+			element.onclick = function(){
+				alert("クリックされました");
+			}
+			
+		</script>
+	</body>
+</html>

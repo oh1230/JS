@@ -1,0 +1,40 @@
+<html>
+	<head>
+		<title>算術演算子の優先順位を確認するプログラム</title>
+	</head>
+	<body>
+		<h1>算術演算子の優先順位を確認するプログラム</h1>
+		<script type="text/javascript">
+		
+			//計算用の値を管理する変数を宣言し、値を代入
+			var a = 9;
+			var b = 1;
+			var c = 3;
+			
+			//回答を管理する変数
+			var answer;
+			
+			document.write("a = ");
+			document.write(a);
+			document.write("<br>");
+			
+			document.write("b = ");
+			document.write(b);
+			document.write("<br>");
+			
+			document.write("c = ");
+			document.write(c);
+			document.write("<br>");
+			
+			answer = a + b * c;
+				document.write("a + b * c = ");
+			document.write(answer);
+			document.write("<br>");
+			
+			answer = (a + b) * c;
+				document.write("(a + b) * c = ");
+			document.write(answer);
+			
+		</script>
+	</body>
+</html>
